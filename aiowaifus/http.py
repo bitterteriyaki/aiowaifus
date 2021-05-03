@@ -69,10 +69,10 @@ class HTTPClient:
     def __init__(self, loop, connector):
         self.client = aiohttp.ClientSession(connector=connector, loop=loop)
 
-    async def request(self, method, path, body={}):
+    async def request(self, method, path, **kwargs):
         url = self.BASE_URL + path
         
-        async with self.client.request(method, url, json=body) as r:
+        async with self.client.request(method, url, **kwargs) as r:
             log.debug(f'{method} {url} has returned code {r.status}.')
             return await r.json()
 
