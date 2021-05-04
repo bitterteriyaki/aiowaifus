@@ -23,6 +23,20 @@ SFW (Safe For Work)
 - smug
 - bonk
 - yeet
+- smile
+- wave
+- highfive
+- handhold
+- nom
+- bite
+- glomp
+- kill
+- slap
+- happy
+- wink
+- poke
+- dance
+- cringe
 - blush
 
 .. _nsfw:
